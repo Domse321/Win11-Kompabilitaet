@@ -10,20 +10,20 @@ Dieses Projekt bietet eine automatisierte Lösung, um die Hardware-Kompatibilit�
 * **Detaillierter Hardware-Check:** Prüfung von CPU (Kerne/Takt), RAM, Speicherplatz, Partitionstil (GPT), Firmware (UEFI), Secure Boot und TPM 2.0.
 * **Inventarisierung:** Erfassung von Seriennummer, MAC-Adresse, Hersteller, Modell und OS-Installationsdatum.
 * **Automatisierung:** Generierung von standortspezifischen Starter-Dateien (.bat).
-* [cite_start]**Zentrales Reporting:** Zusammenführung aller Einzelberichte in eine professionelle Excel-Datei mit Filterfunktionen[cite: 1].
+* **Zentrales Reporting:** Zusammenführung aller Einzelberichte in eine professionelle Excel-Datei mit Filterfunktionen.
 
 ## 📁 Dateistruktur
 
 * `WIn11-Check.ps1`: Das Kernskript zur Datensammlung und Kompatibilitätsprüfung.
 * `Standort_BATs_erstellen.ps1`: Erzeugt automatisch Batch-Dateien für jeden Standort.
 * `standorte.txt`: Steuerungsdatei mit einer Liste der Standorte.
-* [cite_start]`Report.ps1`: Skript zur Erstellung des Gesamt-Excel-Reports aus den gesammelten CSV-Daten[cite: 1].
+* `Report.ps1`: Skript zur Erstellung des Gesamt-Excel-Reports aus den gesammelten CSV-Daten.
 
 ## 🛠 Voraussetzungen
 
 * **Betriebssystem:** Windows 7 oder neuer.
 * **Rechte:** Für vollständige Ergebnisse (TPM/Secure Boot) ist die Ausführung als **Administrator** erforderlich.
-* [cite_start]**Module:** Für den Excel-Export wird das PowerShell-Modul `ImportExcel` benötigt (wird bei Bedarf vom Report-Skript installiert)[cite: 1].
+* **Module:** Für den Excel-Export wird das PowerShell-Modul `ImportExcel` benötigt (wird bei Bedarf vom Report-Skript installiert).
 
 ## 📖 Nutzung des Workflows
 
@@ -37,9 +37,9 @@ Starte die entsprechende `.bat`-Datei (z.B. `#Berlin.bat`) auf dem Zielrechner, 
 * Eine visuelle Rückmeldung zeigt sofort an, ob das Gerät Windows 11 fähig ist.
 
 ### 3. Auswertung
-[cite_start]Sammle alle erzeugten CSV-Dateien in einem Ordner und führe `Report.ps1` aus[cite: 1]. 
-* [cite_start]Das Skript führt alle Daten zusammen[cite: 1].
-* [cite_start]Es wird eine Datei `Gesamt-Report.xlsx` erstellt, die automatisch geöffnet wird[cite: 1].
+Sammle alle erzeugten CSV-Dateien in einem Ordner und führe `Report.ps1` aus. 
+* Das Skript führt alle Daten zusammen.
+* Es wird eine Datei `Gesamt-Report.xlsx` erstellt, die automatisch geöffnet wird.
 
 ## ⚠️ Wichtige Hinweise zum TPM-Check
 * **Admin-Modus:** Der TPM-Status wird zwingend für die Kompatibilitätswertung herangezogen.
