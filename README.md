@@ -14,7 +14,7 @@ Dieses Projekt bietet eine automatisierte Lösung, um die Hardware-Kompatibilit�
 
 ## 📁 Dateistruktur
 
-* `WIn11-Check.ps1`: Das Kernskript zur Datensammlung und Kompatibilitätsprüfung.
+* `Win11-Check.ps1`: Das Kernskript zur Datensammlung und Kompatibilitätsprüfung.
 * `Standort_BATs_erstellen.ps1`: Erzeugt automatisch Batch-Dateien für jeden Standort.
 * `standorte.txt`: Steuerungsdatei mit einer Liste der Standorte.
 * `Report.ps1`: Skript zur Erstellung des Gesamt-Excel-Reports aus den gesammelten CSV-Daten.
